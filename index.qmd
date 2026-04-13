@@ -1,3 +1,0 @@
-Welcome to my quantitative finance portfolio. I am focused on derivatives pricing, stochastic modeling, and algorithmic development using Python.
-
-Feel free to explore my projects in the navigation bar above.
