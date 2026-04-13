@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.35">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>How to lose less money on prediction markets – Pablo Maximiliano</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-22b4aaf4c2978829df3684e8f2c068db.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-25594543a0b82430c9b0b047752f0dde.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Pablo Maximiliano</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#lets-roll-the-dice" id="toc-lets-roll-the-dice" class="nav-link active" data-scroll-target="#lets-roll-the-dice">Let’s roll the dice!</a></li>
+  <li><a href="#wait-what-are-prediction-markets" id="toc-wait-what-are-prediction-markets" class="nav-link" data-scroll-target="#wait-what-are-prediction-markets">Wait, what are Prediction Markets?</a></li>
+  <li><a href="#hows-this-different-from-a-sports-betting-site" id="toc-hows-this-different-from-a-sports-betting-site" class="nav-link" data-scroll-target="#hows-this-different-from-a-sports-betting-site">How’s this different from a sports betting site?</a></li>
+  <li><a href="#who-are-you-actually-trading-against" id="toc-who-are-you-actually-trading-against" class="nav-link" data-scroll-target="#who-are-you-actually-trading-against">Who Are You Actually Trading Against?</a></li>
+  <li><a href="#how-to-bleed-slower" id="toc-how-to-bleed-slower" class="nav-link" data-scroll-target="#how-to-bleed-slower">How to Bleed Slower</a>
+  <ul class="collapse">
+  <li><a href="#expected-value-ev" id="toc-expected-value-ev" class="nav-link" data-scroll-target="#expected-value-ev">1. Expected Value (EV)</a></li>
+  <li><a href="#the-kelly-criterion" id="toc-the-kelly-criterion" class="nav-link" data-scroll-target="#the-kelly-criterion">2. The Kelly Criterion</a></li>
+  <li><a href="#bid-ask-spread-and-illiquidity" id="toc-bid-ask-spread-and-illiquidity" class="nav-link" data-scroll-target="#bid-ask-spread-and-illiquidity">3. Bid-Ask Spread and illiquidity</a></li>
+  </ul></li>
+  <li><a href="#the-family-of-elephants-in-the-room" id="toc-the-family-of-elephants-in-the-room" class="nav-link" data-scroll-target="#the-family-of-elephants-in-the-room">The family of elephants in the room</a>
+  <ul class="collapse">
+  <li><a href="#where-the-hell-do-we-get-a-reliable-p" id="toc-where-the-hell-do-we-get-a-reliable-p" class="nav-link" data-scroll-target="#where-the-hell-do-we-get-a-reliable-p">1. Where the hell do we get a reliable <span class="math inline">\(p\)</span>?</a></li>
+  <li><a href="#what-if-you-find-too-many-good-bets-haha-yeah-right" id="toc-what-if-you-find-too-many-good-bets-haha-yeah-right" class="nav-link" data-scroll-target="#what-if-you-find-too-many-good-bets-haha-yeah-right">2. What if you find too many good bets? (haha yeah right)</a></li>
+  <li><a href="#how-long-in-advance-should-we-place-a-bet" id="toc-how-long-in-advance-should-we-place-a-bet" class="nav-link" data-scroll-target="#how-long-in-advance-should-we-place-a-bet">3. How long in advance should we place a bet?</a></li>
+  <li><a href="#whos-putting-their-money-where-their-mouth-is" id="toc-whos-putting-their-money-where-their-mouth-is" class="nav-link" data-scroll-target="#whos-putting-their-money-where-their-mouth-is">4. Who’s putting their money where their mouth is?</a></li>
+  <li><a href="#is-there-something-a-bit-easier" id="toc-is-there-something-a-bit-easier" class="nav-link" data-scroll-target="#is-there-something-a-bit-easier">5. Is there something a bit easier?</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">How to lose less money on prediction markets</h1>
+<p class="subtitle lead">Using math, portfolio management, and common sense (the least common of the senses).</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="lets-roll-the-dice" class="level2">
+<h2 class="anchored" data-anchor-id="lets-roll-the-dice">Let’s roll the dice!</h2>
+<p>Let’s face it, if you are currently trading in prediction markets, you are probably losing money. Prediction markets like Polymarket or Kalshi have exploded in popularity. They offer a huge variety of things in which to bet on like current news, pop culture, politics, sports, or finance. It’s quick and easy to open an account and start betting on whether the Fed will cut interest rates, who will win the next election, or even if bitcoin will go up or down in the next five minutes.</p>
+<p>But here is the reality check, you are not playing a casual football fantasy game with your friends. You are trading against very fast trading algorithms, way too much insider information (yes, someone always knows who’s gonna get bombed next week), and massive crypto whales.</p>
+<p>If you understand a little bit of probability, expected value, and risk management, you can stop gambling and start trading (while still losing money, but at least looking more professional). This article won’t teach you how to get rich quick or slow (if I knew how, I would do it myself and not tell a soul), but it will teach you how to lose less money, survive the variance, and maybe, just maybe, don’t suck all the fun out of it while doing it.</p>
+</section>
+<section id="wait-what-are-prediction-markets" class="level2">
+<h2 class="anchored" data-anchor-id="wait-what-are-prediction-markets">Wait, what are Prediction Markets?</h2>
+<p>If you have no idea what Kalshi or Polymarket are, good. Turn around and don’t throw away your money. But if you must know, at their core, prediction markets are exchanges where people trade the outcome of future events.</p>
+<p>Instead of buying shares of Nvidia or Microsoft, you are buying shares of an outcome. These contracts are binary: they resolve to either Yes or No.&nbsp;</p>
+<p>Here is the fundamental mechanic you need to understand:</p>
+<ul>
+<li>If the event happens, the Yes share pays out exactly $1.00.</li>
+<li>If the event does not happen, the Yes share becomes worthless ($0.00).</li>
+</ul>
+<p>Because the payout is always $1.00, the current price of a share represents the market’s implied probability of that event actually happening. If a Yes share is currently trading at $0.60 (or 60 cents), the market collectively believes there is a 60% chance the event will happen.</p>
+<p>If you buy that share at $0.60 and you are right, you make $1.00 (or a $0.40 profit). If you are wrong, you lose your $0.60 investment (gamble).</p>
+<p>But please keep in mind that this percentages are just a useful approximation, but it is not strictly true. The market price is actually the result of many forces interacting at once like dumb beliefs about the probability, liquidity constraints, hedging behavior, emotional traders like you and me, political or ideological bias or different risk tolerances.</p>
+<p>Because of these things, prices can remain slightly wrong for surprisingly long periods of time, and we’ll try to use that in our favor.</p>
+</section>
+<section id="hows-this-different-from-a-sports-betting-site" class="level2">
+<h2 class="anchored" data-anchor-id="hows-this-different-from-a-sports-betting-site">How’s this different from a sports betting site?</h2>
+<p>If you are thinking those are just good ol’ sportsbooks with a fancy new name, you are missing a crucial distinction that matters quite a bit for our mathematical models.</p>
+<p>Traditional bookmakers operate on a dealer model. You bet against the house. The house sets the odds and bakes in a hidden margin usually called the vig or juice. They actively seek balanced action so they can pay the winners with the losers’ money and pocket the difference. The house always wins.</p>
+<p>Prediction markets like Kalshi and Polymarket are exchanges (Order Books or Automated Market Makers).</p>
+<p>You are not betting against the platform. You are trading against other human beings and way smarter bots.</p>
+<p>The platform doesn’t give a damn who wins. They simply take a small transaction fee and/or a withdrawal fee.</p>
+<p>You can buy a share at $0.40 and sell it five minutes later at $0.50 if the news or public sentiment changes. You don’t have to hold it until the event resolves. But I guess some sportbooks implemented that as well.</p>
+<section id="the-big-two" class="level4">
+<h4 class="anchored" data-anchor-id="the-big-two">The Big Two</h4>
+<p>You’ll likely run into one of these two platforms:</p>
+<ol type="1">
+<li>Kalshi: A fully regulated US financial exchange. You trade in USD. It’s strictly monitored by the CFTC, meaning it’s legit, but markets are restricted to events approved by regulators (mostly economics, politics, and verifiable data).</li>
+<li>Polymarket: A decentralized crypto platform built on the Polygon blockchain. You trade using USDC (a stablecoin pegged to the dollar, whatever that means). It is the Wild West: global, usually more liquid, and you can trade on almost whatever you want. Because it’s on-chain, every single trade and whale wallet is public, so we can take advantage of it and scrape the data to, again, lose money.</li>
+</ol>
+<p>This is what the battlefield looks like, it’s time to open the first aid kit (we don’t even have a peashooter). We need to talk about why our gut feeling is mathematically terrible, and how to use Expected Value (EV) to try to fix it.</p>
+</section>
+</section>
+<section id="who-are-you-actually-trading-against" class="level2">
+<h2 class="anchored" data-anchor-id="who-are-you-actually-trading-against">Who Are You Actually Trading Against?</h2>
+<p>Before we open the first aid kit, you need to know what inflicted the wound, where are the shots coming from, who’s the actual enemy. When you log into one of these sites, you are nothing but the coughing baby in the coughing baby vs.&nbsp;hydrogen bomb meme.</p>
+<p>Professional traders (more intelligent, with more resources and working in groups) function at another kind of speed. While you are reading a breaking news tweet, processing the information, opening the Kalshi app, and clicking buy, one of their bots has already read the news via API, parsed the sentiment using a Large Language Model, and bought up all the cheap shares. You are buying their leftovers at a premium.</p>
+<p>On top of that, we have to deal with very asymmetric information. The people taking the other side of your bet might literally be the ones making the news. In political or entertainment markets, insider trading isn’t just a risk, it’s a feature. You are betting against the cousin of the guy that decides who the next Oscar goes to.</p>
+<p>Not only that, but they have infinite ammo, they have more money than everyone we know. Those whales and funds don’t just bet on outcomes, they, as they say, make the market. They provide liquidity on both the Yes and No sides at the same time, earning a small, risk free profit on the spread of every trade. They don’t care about who wins the election, they just want you to keep trading and bleeding money.</p>
+<p>Since we can’t beat them at speed or insider knowledge or anything else really, our only hope is mathematical discipline. We need to stop behaving like degenerate gamblers and start acting like boring grown adults.</p>
+</section>
+<section id="how-to-bleed-slower" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-bleed-slower">How to Bleed Slower</h2>
+<p>Let’s put away our gut feelings, our political biases, and let’s take off our favorite sports team shirts. None of that is gonna help. To survive (or to die not so quickly), we’re going to use three useful concepts.</p>
+<section id="expected-value-ev" class="level3">
+<h3 class="anchored" data-anchor-id="expected-value-ev">1. Expected Value (EV)</h3>
+<p>You have to stop asking the question: <em>Will this thing happen?</em> The only question you can ask from now on is: <em>Is the market’s price wrong?</em> You don’t bet on outcomes, you bet on mispriced probabilities.</p>
+<p>To put a number to this, we use the Expected Value (EV). This is simply the mathematical average of what you would win or lose if you made the exact same bet an infinite number of times.</p>
+<p>Like we said before, in a binary prediction market, every winning share pays out exactly $1.00. Therefore, the price of the share is the market’s implied probability. If a share costs 40 cents ($0.40), the market is saying there is a 40% chance that event happens.</p>
+<p>If your personal, thorough, meticulously researched model (Lord knows you don’t have one of those, don’t lie) says the true probability (<span class="math inline">\(p\)</span>) is different from the market’s cost (<span class="math inline">\(c\)</span>), you calculate the EV with this very simple formula:</p>
+<p><span class="math display">\[EV = p - c\]</span></p>
+<p>Let’s take a look at a bad bet vs.&nbsp;a good bet to see exactly when you should pull the trigger:</p>
+<section id="the-bad-bet" class="level4">
+<h4 class="anchored" data-anchor-id="the-bad-bet">The bad bet</h4>
+<p>Let’s say you love candidate A. You are absolutely convinced (because of that thorough research) they have a 70% chance of winning (<span class="math inline">\(p = 0.70\)</span>). You check Polymarket, and the Yes share is currently trading at 85 cents (<span class="math inline">\(c = 0.85\)</span>).</p>
+<p>Because you like the candidate and think they will win, you buy it. Let’s run the numbers:</p>
+<p><span class="math display">\[EV = 0.70 - 0.85 = -0.15\]</span></p>
+<p>Your Expected Value is negative 15 cents. Why on earth? Because you are paying 85 cents for something that your own model, the one that is well done and you should trust, says is only worth 70 cents. Even if Candidate A ends up winning and you make a profit this one time, it was a mathematically awful trade. If you take this kind of bet thousands of times, you will eventually go broke.</p>
+</section>
+<section id="the-good-bet" class="level4">
+<h4 class="anchored" data-anchor-id="the-good-bet">The good bet</h4>
+<p>Now let’s look at candidate B. You don’t even like candidate B. But you’ve done your fantastic research, and your model says candidate B has a solid 60% chance of winning (<span class="math inline">\(p = 0.60\)</span>).</p>
+<p>You check the market, and it is underestimating the candidate B. The Yes share is sitting at just 40 cents (<span class="math inline">\(c = 0.40\)</span>).</p>
+<p><span class="math display">\[EV = 0.60 - 0.40 = +0.20\]</span></p>
+<p>Your Expected Value is positive 20 cents. This is exactly what you’re after. You are buying a $1.00 payout for 40 cents, when it actually has a 60% chance of hitting. Even though there is a 40% chance you will lose this specific bet, the math dictates that you have to take it. Every time you find this exact gap or discrepancy and take the bet, you are mathematically expected to make 20 cents.</p>
+<p>This is the rule of thumb for prediction markets. You pull the trigger when your <span class="math inline">\(p\)</span> is greater than the market’s <span class="math inline">\(c\)</span>.</p>
+</section>
+</section>
+<section id="the-kelly-criterion" class="level3">
+<h3 class="anchored" data-anchor-id="the-kelly-criterion">2. The Kelly Criterion</h3>
+<p>Okay, miracle of miracles, you found an edge. Your model (a good one) says the probability is 60% (<span class="math inline">\(0.60\)</span>), but the market is asleep and pricing it at 40 cents (<span class="math inline">\(0.40\)</span>). You have found positive EV so naturally you bet your entire account balance, right? This is where the ghost of John Kelly punches you in the throat and gives you the best advice you’ve heard so far: never go all in.</p>
+<p>Because a 60% probability still means you lose 4 times out of 10. If you go all in, you will sooner rather than later hit that 40% chance of failure and your account will hit zero. This doesn’t mean you have to be super conservative with your bets either, there’s gotta be a sweetspot in the middle maximizing the returns while minimizing the chance of going broke.</p>
+<p>Luckily for us, the Kelly Criterion formula tells you exactly that. The fraction of your bankroll you should risk on a single bet to maximize your long term growth rate without going bankrupt.</p>
+<p>If we want to get technical, Kelly doesn’t maximize your expected profit. It maximizes the expected logarithm of your wealth or <span class="math inline">\(E[\log(W)]\)</span>. Why the logarithm? Because it punishes strategies that makes you go broke. Losing 100% of your bankroll sends <span class="math inline">\(log(W)\)</span> to negative infinity, which the optimization doesn’t like at all.</p>
+<p>For a binary prediction market where shares pay $1.00, the optimal fraction of your bankroll to wager <span class="math inline">\(f^*\)</span> is calculated as:</p>
+<p><span class="math display">\[f^* = \frac{p - c}{1 - c}\]</span></p>
+<p>Let’s plug in our numbers (<span class="math inline">\(p = 0.60\)</span>, <span class="math inline">\(c = 0.40\)</span>):</p>
+<p><span class="math display">\[f^* = \frac{0.60 - 0.40}{1 - 0.40} = \frac{0.20}{0.60} = 0.333\]</span></p>
+<p>The math is telling you to bet exactly 33.3% of your total portfolio on this trade.</p>
+<p>But be careful, the pure Kelly Criterion assumes your <span class="math inline">\(p\)</span> (your estimated probability) is 100% accurate, and we both know it’s not, your research and models aren’t that good. Because of this, even professional traders never use the full Kelly percentage. They use fractional Kelly which is usually half-Kelly or quarter-Kelly to cushion the blow of their own arrogance.</p>
+</section>
+<section id="bid-ask-spread-and-illiquidity" class="level3">
+<h3 class="anchored" data-anchor-id="bid-ask-spread-and-illiquidity">3. Bid-Ask Spread and illiquidity</h3>
+<p>Finally, you found positive EV, you calculated your fractional Kelly, and you are ready to execute and make some money. But wait, there’s more.</p>
+<p>You look at the market and it says the price is $0.50. But when you hit buy, you realize the cheapest person willing to sell a share to you right now is asking for $0.53 (the ask). And if you buy it and get cold feet and decide to immediately sell that share back, the highest buyer is only offering $0.47 (the bid). That 6 cent gap is the Bid-Ask spread. And the midpoint ($0.50) is the price most sites display.</p>
+<p>Here’s where market makers come in. They are traders whose job is to constantly provide liquidity to that specific market. They place orders on both sides of the book (bids and ask) at the same time, this means they are willing to buy from impatient sellers at $0.47 and sell to impatient buyers at $0.53.</p>
+<p>If someone sells to them and later someone else buys from them, they capture the spread 0.53 - 0.47 = 0.06. Their business model consist of collecting small spreads over and over again.</p>
+<p>If you want to buy instantly, you have to cross the spread and pay their premium. In highly liquid markets, like the presidential election, the spread might be just 1 cent. In obscure, low volume markets, the spread could be 10 or 15 cents.</p>
+<p>A big spread will eat your positive EV alive. If your mathematical edge is only 3 cents, but you have to pay a 5 cent spread to enter the trade, your edge is gone.</p>
+</section>
+</section>
+<section id="the-family-of-elephants-in-the-room" class="level2">
+<h2 class="anchored" data-anchor-id="the-family-of-elephants-in-the-room">The family of elephants in the room</h2>
+<p>If you made it this far, congrats, you now know more about risk management than 90% of the degenerates trading on Kalshi or Polymarket. But if you are actually paying attention, you probably realized the little formulas have some big holes in the real world.</p>
+<section id="where-the-hell-do-we-get-a-reliable-p" class="level3">
+<h3 class="anchored" data-anchor-id="where-the-hell-do-we-get-a-reliable-p">1. Where the hell do we get a reliable <span class="math inline">\(p\)</span>?</h3>
+<p>Your gut feeling is not a statistical model. Watching three hours of YouTube videos and deciding “I feel like this is definitely going to happen” is exactly how the whales pay for their second yachts.</p>
+<p>To find a reliable <span class="math inline">\(p\)</span> that gives you an actual edge, you have to do what data scientists do best: steal other people’s homework, look at the historical data, and stalk the smart money.</p>
+<p>One of the simplest tricks is Market Triangulation, that is, comparing multiple platforms that price the same event.</p>
+<p>For example, let’s just say that for a sporting event, Polymarket has 45%, Kalshi a 52%, Betfair a 53% and Fanduel and Draftkings both a 54%. These platforms have different traders, liquidity conditions, and fees. If one of them deviates significantly from the others, it may be temporarily mispriced.</p>
+<p>Real traders constantly monitor these differences, even if sometimes the edge is might be only a few cents, but in prediction markets a few cents is the whole game.</p>
+<p>Another way to improve your estimate is looking at the base rate or the historical frequency of similar events. Instead of asking yourself “what feels likely?” you should be asking “Historically, how often does this kind of thing actually happen?”</p>
+<p>For example, How often do incumbents win reelection? How often does the Fed cut rates during similar macro conditions? How often do we get a tie at full time in the final of the Champions League?</p>
+<p>Even a rough base rate is usually way better than your great intuition. Thankfully you can find external models professionally executed for things like election forecasting, poll aggregators data, macroeconomic probability models or options market implied probabilities. If their probability estimate is far away from the market price, you may have found an opportunity. Of course, trusting any model is dangerous. But ignoring them completely might be even worse.</p>
+<p>Another thing to keep in mind is the information flow, prediction markets are way too sensitive to new information. Breaking news, polling updates, regulatory decisions, earnings reports, or even twitter rumors can move prices instantly. But as you already know, fast traders using bots monitor news feeds, APIs, and social media streams to detect information faster than you and me. But that’s not to say you can’t find opportunities. Prices jump too far in one direction and later drift back toward a more reasonable level when new information becomes public to the market.</p>
+<p>Polymarket runs on the Polygon blockchain, meaning everything is public. Every single trade, wallet and position. You can write a script to monitor the contracts via API and filter for the most profitable wallets, the guys with with an 80% historical win rate and 5 million in realized profit. If that guy suddenly drops a cool $500,000 on Yes for a specific market, you better pay attention. You probably won’t even know why they are buying it. In data science, this is related to Bayesian Updating, which happens when you start with your baseline probability, and when you observe a big, highly informed player making a move, you update your <span class="math inline">\(p\)</span> in their direction.</p>
+</section>
+<section id="what-if-you-find-too-many-good-bets-haha-yeah-right" class="level3">
+<h3 class="anchored" data-anchor-id="what-if-you-find-too-many-good-bets-haha-yeah-right">2. What if you find too many good bets? (haha yeah right)</h3>
+<p>Let’s imagine a beautiful, theoretical world where you actually listened to me. You checked the polling aggregators, you looked at the base rates, and you found not one, but five incredible, juicy, positive EV bets on Polymarket.</p>
+<p>You run the standard Kelly Criterion formula for each of them, and the math says:</p>
+<ul>
+<li>Bet A: 25% of your bankroll</li>
+<li>Bet B: 30%</li>
+<li>Bet C: 20%</li>
+<li>Bet D: 40%</li>
+<li>Bet E: 15%</li>
+</ul>
+<p>That is 130% of your bankroll (I’ve checked a couple of times). Unless your crypto exchange currently accepts kidneys as collateral, you have a massive problem. You cannot bet money you don’t have, hell, you shouldn’t even be betting on money you have. So, how do we fit 130% of optimal bets into a 100% reality?</p>
+<p>The lazy way to handle this is to scale everything down (squash) proportionally. And remember how we talked about fractional Kelly? Because our models are probably wrong, we shouldn’t even be risking 100% of our bankroll anyway. Let’s say we are responsible adults and we cap our total market exposure at a strict 50% for the whole porfolio.</p>
+<p>To squash our bets down to fit our 50% budget, we take the target size for a specific bet, divide it by the sum of all Kelly recommendations, and multiply it by our maximum budget:</p>
+<p><span class="math display">\[\text{Adjusted Bet} = \left( \frac{\text{Original Kelly Fraction}}{\text{Sum of all Kelly Fractions}} \right) \times \text{Max Exposure}\]</span></p>
+<p>For bet A (originally 25%), the math looks like this:</p>
+<p><span class="math display">\[\text{Adjusted Bet A} = \left( \frac{0.25}{1.30} \right) \times 0.50 \approx 0.096\]</span></p>
+<p>So, bet A gets scaled down from a reckless 25% to a very manageable 9.6% of your bankroll. You do this for all five bets, and magically, your total exposure is exactly 50%. Problem solved, right? Wrong again. You might still blow up your account. The squashing method assumes every single bet is completely independent. In the real world, especially in politics and macroeconomics, nothing is independent.</p>
+<p>Let’s take a quick look at a hypothetical Polymarket portfolio.</p>
+<ol type="1">
+<li>Will the Fed cut interest rates by 50 bps? (You bet YES)</li>
+<li>Will the S&amp;P 500 hit an all time high this month? (You bet YES)</li>
+<li>Will Bitcoin cross $100k? (You bet YES)</li>
+</ol>
+<p>You run Kelly, you squash them down, and you allocate 10% of your bankroll to each. You think you are beautifully diversified across three different markets (bonds, equities, and crypto). But you aren’t. If inflation comes in hotter than expected and the Fed decides to raise rates instead of cutting them, the S&amp;P 500 will crash, and Bitcoin will plummet. You didn’t make three independent 10% bets. You made one giant 30% bet on inflation going down.</p>
+<p>A serious portfolio manager doesn’t use the simple Kelly formula when dealing with multiple bets. They might resort to the simultaneous Kelly criterion, which uses the covariance matrix.</p>
+<p>Instead of just looking at the Expected Value of each bet, simultaneous Kelly maps out how every bet interacts with each other:</p>
+<ul>
+<li>If bet A and bet B are perfectly correlated, the formula treats them as the same bet and lowers their allocation.</li>
+<li>If bet A and bet B are negatively correlated (they act as a hedge against each other), the formula might actually tell you to increase your bet size, because your overall risk is lower.</li>
+</ul>
+<p>I could write out the linear algebra for solving a multidimensional Kelly optimization using matrix inversion right here. It involves calculating the inverse of the covariance matrix of excess returns. But I won’t. Because no one on earth is doing that math in their head, or even on a napkin, while trying to catch a 5 cent arbitrage opportunity.</p>
+</section>
+<section id="how-long-in-advance-should-we-place-a-bet" class="level3">
+<h3 class="anchored" data-anchor-id="how-long-in-advance-should-we-place-a-bet">3. How long in advance should we place a bet?</h3>
+<p>You’ve done it (you haven’t). You found the perfect bet. You scraped the data, you dodged the highly correlated markets, and you calculated a healthy, undeniably positive Expected Value. The market is pricing an event at 20 cents, but your rock solid model says the true probability is 50%.</p>
+<p>You are about to click the buy button and commit 15% of your bankroll when you notice one important detail: Market Resolves: November 4, 2050.</p>
+<p>If you make this bet, your money is now held hostage for the next couple of decades. You cannot use those funds to bet on tomorrow’s inflation data. You cannot use them to buy groceries or pokemon cards. They are locked in a smart contract or a clearinghouse, doing absolutely nothing until the event resolves.</p>
+<p>Money today is worth more than money tomorrow. This is a mathematical law known as the time value of money (TVM). When you lock up your money in a long term prediction market, you are paying an invisible tax called opportunity cost. While your money is waiting for the next presidential election, your government (probably) is literally offering to pay you a guaranteed ~3.5% a year just for holding treasury bonds. This is your risk free rate.</p>
+<p>If a bet cannot beat the risk free rate, taking into account the time your money is locked up, it is not a good trade. Let’s picture this. You buy a share at $0.40 with a true probability of 50%.</p>
+<p>Your Expected Value formula tells you: <span class="math display">\[EV = 0.50 - 0.40 = +0.10\]</span></p>
+<p>That is a 50% expected return on investment (ROI) because you expect to make 10 cents on a 20 cent investment. But let’s say this market doesn’t resolve for 10 years, to see if this is actually a good use of your money, you need to calculate the annualized expected return.</p>
+<p>The formula to annualize a return over <span class="math inline">\(t\)</span> years is:</p>
+<p><span class="math display">\[\text{Annualized Return} = \left(1 + \text{Total ROI}\right)^{\frac{1}{t}} - 1\]</span></p>
+<p>Let’s plug in our huge 50% return ($0.50) over 10 years:</p>
+<p><span class="math display">\[\text{Annualized Return} = \left(1 + 0.50\right)^{\frac{1}{10}} - 1 = (1.50)^{0.1} - 1 \approx 0.041 \text{ (or } 4.1\%)\]</span></p>
+<p>All of a sudden, your great positive EV bet is only expected to yield 4.1% a year. And don’t forget, that is an expected return, meaning it carries real risk. Meanwhile, your government is paying you 3.5% “completely risk free” and also completely liquid. Don’t fall for the trap of thinking Polymarket is an exchange and you can just sell your shares to someone else next month if the price goes up. Remember the Bid-Ask spread, long term markets are usually illiquid. If you try to dump a big position in a market that doesn’t resolve for a decade, there might not be any buyers. You will have to accept a terrible price, completely destroying your precious EV.</p>
+<p>But it doesn’t stop there. Comparing your bet to treasury bonds is the absolute bare minimum. That’s just to see if you are crazy for taking the trade. But if you are actually good at this (you already know the answer), bonds rates aren’t your real opportunity cost. The real opportunity cost is missing out on other shorter term bets.</p>
+<p>Let’s say you found a good bet that resolves a year from now with a big edge, and your annualized expected return is a nice 30%. You put in jail 20% of your bankroll for a whole year. But what if, during those 12 months, you could find a small bet every single week that gives you a small 1% edge?</p>
+<p>Because of the magic of compound interest, taking a 1% profit, reinvesting it, and doing it again and again 52 times in a year completely destroys a flat 30% return: <span class="math display">\[(1 + 0.01)^{52} - 1 \approx 0.677 \text{ (or } 67.7\% \text{)}\]</span></p>
+<p>This is the velocity of capital. You’d rather have short duration trades over long term holdings. The more bets you make with a positive EV, the faster the law of large numbers blesses you, smoothing out your variance and compounding your bankroll. This doesn’t mean you should never take a 12 month bet, but you gotta have some rules.</p>
+<p>Never let your long term bets eat your short term compounding engine. You have to establish a strict illiquidity budget. For example, no more than 20% of your total bankroll can be tied up in markets that resolve in more than 3 months. The remaining 80% is kept liquid to hunt for daily and weekly positive EV opportunities.</p>
+<p>In the case of Kalshi and Polymarket, remember, they are an exchange. Imagine you buy shares for candidate C at 0.20, 12 months before the election. And 2 months later, candidate C has a great debate or candidate A and B have a fuck up, and the market price goes to 0.40. That’s a 100% ROI in two months. Go sell it and don’t hold it for another 10 months just to squeeze out the remaining 60 cents. Take the profit, free up your capital, and look for new bets. You don’t have to marry these contracts, you are just renting the mispricing.</p>
+</section>
+<section id="whos-putting-their-money-where-their-mouth-is" class="level3">
+<h3 class="anchored" data-anchor-id="whos-putting-their-money-where-their-mouth-is">4. Who’s putting their money where their mouth is?</h3>
+<p>Who wakes up on a Tuesday and decides that “Will United win the Premier League?” or “Will the president say McDonalds five times in his speech?” should be a tradable financial asset?</p>
+<p>Understanding the birth of a market is key, because the moment it goes live is often when it is the most inefficient, and you guessed it, the most profitable. This actually depends, like we explained in the beginning, on the platform you are using:</p>
+<ul>
+<li>Kalshi is regulated by the CFTC (Commodity Futures Trading Commission). They cannot just list whatever they want. A bunch lawyers and product managers write a formal proposal for a market, proves it has a clear, verifiable resolution source, and asks the regulators for permission.</li>
+<li>Polymarket is international waters. Markets are proposed by the community on Discord or even created by the core team to capture trending news. They don’t need government approval, they just need a decentralized blockchain oracle (like UMA) to verify the real world outcome when the market ends.</li>
+</ul>
+<p>When the market is created, the platform or market makers (the guys making actual money) provide the initial liquidity. They look at external data, like traditional sportsbooks, poll aggregators, or options pricing and they seed the initial order book at the “fair” probability.</p>
+<p>But if you think you can sit on your laptop, refresh the Polymarket homepage, wait for a new market to drop, and buy mispriced shares before anyone else I have bridge NFT I’d like to sell you. The first players in any newly minted market are usually bots. These are algorithms built by professional traders that monitor the blockchain’s memory pool (mempool) for new market creation contracts. The moment a market goes live, in the blink of an eye, these bots compare the seeded initial price against their own internal APIs (scraping news, sportsbooks, or weather data).</p>
+<p>If the market maker made a slight error and seeded the market at 15 cents instead of 10 cents, the sniper bots will execute thousands of trades buying shares until the price is down to 10 cents. By the time the Polymarket frontend updates and you see the new market on your screen, the fight is already over. The bots have extracted the initial inefficiency, and you are left trading at the mathematically correct price like a good boy. Your edge will never come from being the fastest to a new market, It will come from predicting how the price will change days or weeks later as new information slowly comes into the public.</p>
+</section>
+<section id="is-there-something-a-bit-easier" class="level3">
+<h3 class="anchored" data-anchor-id="is-there-something-a-bit-easier">5. Is there something a bit easier?</h3>
+<p>What if I told you there is a way to make a 100% guaranteed profit, regardless of what happens, no models, no probabilities, no risk, no BS.</p>
+<p>Welcome to arbitrage. We’ll talk about two types of arbitrage you can hunt for in prediction markets:</p>
+<section id="cross-exchange-arbitrage" class="level4">
+<h4 class="anchored" data-anchor-id="cross-exchange-arbitrage">Cross-exchange arbitrage</h4>
+<p>This kind happens when two different platforms disagree on the price of the exact same event. Let’s pretend the market is “Will the Fed cut rates in May?”</p>
+<ul>
+<li>On Polymarket the Yes share costs 40 cents.</li>
+<li>On Kalshi the No share costs 55 cents.</li>
+</ul>
+<p>If you buy one Yes on Polymarket and one No on Kalshi, your total cost is 95 cents. And because the event must either happen or not happen, one of those shares is guaranteed to pay out $1.00. You spend $0.95 to get $1.00. A risk free 5 cent profit per contract.</p>
+</section>
+<section id="same-exchange-arbitrage" class="level4">
+<h4 class="anchored" data-anchor-id="same-exchange-arbitrage">Same-exchange arbitrage</h4>
+<p>Sometimes, in markets with multiple mutually exclusive outcomes, the market makers get sloppy. If you add up the prices of all possible winners, the sum should be $1.00 (or usually a bit higher, representing the house edge in some cases). But occasionally, sudden news or panic selling from someone causes the sum of all prices to go below $1.00. If you buy a share of every singleo outcome for a total cost of $0.97, you are for sure holding the winning $1.00 share.</p>
+<p>If we define the price of outcome <span class="math inline">\(i\)</span> as <span class="math inline">\(C_i\)</span>, an arbitrage opportunity exists when:</p>
+<p><span class="math display">\[\sum_{i=1}^{n} C_i &lt; 1.00\]</span></p>
+<p>You already know it can’t be that easy, and you’re right. The market is very good at defending itself. There’s a few things that should stop you If you try to do these trades manually:</p>
+<p>First, there’s an execution risk. To lock in arbitrage, you have to buy both sides of the trade at the exact same time. But you are a human. You click buy on Polymarket, and then you switch tabs to Kalshi to buy the other side. In those 2 seconds, a way-quicker-than-you trading bot sees the opportunity and buys the Kalshi shares before you can, making the price jump from 55 cents to 65 cents. Now, your total cost is $1.05. The arbitrage is gone, and even worse, you are now stuck holding a bet on Polymarket that you never actually wanted in the first place. Congrats.</p>
+<p>Then there’s the fees. That 5 cent profit looks great on paper. But Polymarket charges transaction fees. Kalshi charges withdrawal fees. Moving your crypto (USDC) back into fiat dollars or euros (or whavever your currency is) involves exchange fees and gas fees on the Polygon network. If your risk free profit is $10, but it costs you $12 in various platform and network fees to move the money around, congrats again, you just paid for the privilege of doing math.</p>
+<p>And we can’t forget the capital lock up. Let’s suppose you executed the trade and beat the fees. You spent $0.95 to guarantee $1.00. You made a ~5.2% return. But if that market doesn’t resolve for 18 months, you just locked up your capital for a 5.2% return over 18 months. And you should know by know that you could have put that money in treasury bonds, taken zero execution risk, paid zero crypto fees, and made more money.</p>
+<hr>
+<p>And I know what you’re thinking: “All this to tell me I don’t have a chance between bots, market makers and whales? That if I want to see my bankroll grow I should just put my money in a boring index fund, and I shouldn’t even be thinking about gambling at all?”</p>
+<p>Yes.</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
