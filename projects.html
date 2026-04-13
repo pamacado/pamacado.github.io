@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>blog – Pablo Maximiliano</title>
+<title>projects – Pablo Maximiliano</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -82,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-description","listing-image"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -157,11 +157,11 @@ window.Quarto = {
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link active" href="./projects.html" aria-current="page"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -188,21 +188,39 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1773780985752" data-listing-reading-time-sort="27" data-listing-word-count-sort="5294">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/prediction_markets/index.html" class="no-external">How to lose less money on prediction markets</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/prediction_markets/index.html" class="no-external">Using math, portfolio management, and common sense (the least common of the senses)</a>
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-2">
+<div class="g-col-1" data-index="0">
+<a href="https://github.com/pamacado/options-pricing" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://opengraph.githubassets.com/1/pamacado/options-pricing" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+options-pricing
+</h5>
+<div class="card-text listing-description delink">
+<p>Web app for pricing European, American, Asian, and Lookback options using Black-Scholes, Monte Carlo and Binary Tree.</p>
 </div>
 </div>
-<div class="metadata">
-<a href="./posts/prediction_markets/index.html" class="no-external">
-</a>
+</div></a>
 </div>
+<div class="g-col-1" data-index="1">
+<a href="https://github.com/pamacado/pdp-rl" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://opengraph.githubassets.com/1/pamacado/pdp-rl" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+pdp-rl
+</h5>
+<div class="card-text listing-description delink">
+<p>Using RL on a mobile game called Pixel Defenders Puzzle</p>
+</div>
+</div>
+</div></a>
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>

@@ -1,11 +1,9 @@
 - title: "options-pricing"
   description: "Web app for pricing European, American, Asian, and Lookback options using Black-Scholes, Monte Carlo and Binary Tree."
-  categories: [Math]
   path: https://github.com/pamacado/options-pricing
   image: "https://opengraph.githubassets.com/1/pamacado/options-pricing"
 
 - title: "pdp-rl"
   description: "Using RL on a mobile game called Pixel Defenders Puzzle"
-  categories: [Python, Machine Learning]
   path: https://github.com/pamacado/pdp-rl
   image: "https://opengraph.githubassets.com/1/pamacado/pdp-rl"

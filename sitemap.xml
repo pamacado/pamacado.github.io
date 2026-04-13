@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/predictionmarkets.html</loc>
-    <lastmod>2026-03-16T19:23:37.835Z</lastmod>
+    <loc>/projects.html</loc>
+    <lastmod>2026-04-13T20:16:40.786Z</lastmod>
   </url>
   <url>
-    <loc>/about.html</loc>
-    <lastmod>2026-04-13T20:11:32.851Z</lastmod>
+    <loc>/posts/prediction_markets/index.html</loc>
+    <lastmod>2026-03-17T20:56:25.752Z</lastmod>
   </url>
   <url>
     <loc>/blog.html</loc>
     <lastmod>2026-03-17T21:02:29.334Z</lastmod>
   </url>
   <url>
-    <loc>/posts/prediction_markets/index.html</loc>
-    <lastmod>2026-03-17T20:56:25.752Z</lastmod>
+    <loc>/about.html</loc>
+    <lastmod>2026-04-13T20:15:09.200Z</lastmod>
+  </url>
+  <url>
+    <loc>/predictionmarkets.html</loc>
+    <lastmod>2026-03-16T19:23:37.835Z</lastmod>
   </url>
 </urlset>

@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/about.html",
+    "listing": "/projects.html",
     "items": []
   },
   {
@@ -8,5 +8,9 @@
     "items": [
       "/posts/prediction_markets/index.html"
     ]
+  },
+  {
+    "listing": "/about.html",
+    "items": []
   }
 ]
