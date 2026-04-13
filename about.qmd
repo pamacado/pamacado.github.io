@@ -1,9 +1,9 @@
 
 ::: {layout-ncol="2"}
 
-[![Repo 1](https://github-readme-stats.vercel.app/api/pin/?username=pamacado&repo=options-pricing&theme=radical)](https://github.com/pamacado/options-pricing)
+[![Repo 1](https://github-stats-cards.vercel.app/api/pin/?username=pamacado&repo=options-pricing&theme=radical)](https://github.com/pamacado/options-pricing)
 
-[![Repo 2](https://github-readme-stats.vercel.app/api/pin/?username=pamacado&repo=pdp-rl&theme=radical)](https://github.com/pamacado/pdp-rl)
+[![Repo 2](https://github-stats-cards.vercel.app/api/pin/?username=pamacado&repo=pdp-rl&theme=radical)](https://github.com/pamacado/pdp-rl)
 
 
 :::
