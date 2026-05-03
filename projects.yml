@@ -1,9 +1,19 @@
-- title: "options-pricing"
-  description: "Web app for pricing European, American, Asian, and Lookback options using Black-Scholes, Monte Carlo and Binary Tree."
+- title: "Options Pricing Calculator"
+  description: "Web app for pricing European, American, Asian, and Lookback options using Black-Scholes, Monte Carlo and Binary Tree"
   path: https://github.com/pamacado/options-pricing
-  image: "https://opengraph.githubassets.com/1/pamacado/options-pricing"
+  image: images/options.jpg
 
-- title: "pdp-rl"
-  description: "Using RL on a mobile game called Pixel Defenders Puzzle"
+- title: "Pixel Defenders Puzzle Reinforcement Learning"
+  description: "Using RL on a match-3 style mobile game"
   path: https://github.com/pamacado/pdp-rl
-  image: "https://opengraph.githubassets.com/1/pamacado/pdp-rl"
+  image: images/pixel.jpg
+
+- title: "Mandelbrot & Hurst"
+  description: "Finding alpha using the Hurst exponential, SP500 data and Machine Learning"
+  path: https://github.com/pamacado/hurst-ml
+  image: images/hurst.jpg
+
+- title: "Simultaneous Kelly Manager"
+  description: "Web app for managing portfolio using simultaneous kelly criterion on prediction markets"
+  path: https://github.com/pamacado/kelly-portfolio
+  image: images/kelly.jpg

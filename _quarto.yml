@@ -7,8 +7,6 @@ website:
   site-url: "/"
   navbar:
     left:
-      - href: index.qmd
-        text: CV
       - href: projects.qmd
         text: Projects
       - href: blog.qmd
