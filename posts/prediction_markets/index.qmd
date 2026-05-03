@@ -7,7 +7,7 @@ format:
     code-fold: true
 ---
 
-## Let's roll the dice!
+## Welcome to the shit show!
 
 Let's face it, if you are currently trading in prediction markets, you are probably losing money. Prediction markets like Polymarket or Kalshi have exploded in popularity. They offer a huge variety of things in which to bet on like current news, pop culture, politics, sports, or finance. It's quick and easy to open an account and start betting on whether the Fed will cut interest rates, who will win the next election, or even if bitcoin will go up or down in the next five minutes. 
 
