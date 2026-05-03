@@ -4,10 +4,6 @@
     "items": []
   },
   {
-    "listing": "/about.html",
-    "items": []
-  },
-  {
     "listing": "/blog.html",
     "items": [
       "/posts/prediction_markets/index.html"

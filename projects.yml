@@ -6,7 +6,7 @@
 - title: "Pixel Defenders Puzzle Reinforcement Learning"
   description: "Using RL on a match-3 style mobile game"
   path: https://github.com/pamacado/pdp-rl
-  image: images/pixel.jpg
+  image: images/pdp.jpg
 
 - title: "Mandelbrot & Hurst"
   description: "Finding alpha using the Hurst exponential, SP500 data and Machine Learning"
