@@ -1,11 +1,10 @@
 ---
-title: "Hello!"
+title: "Hi, I'm Pol."
+toc: false
 ---
 
-# Hi, I'm Pol
+I like Mathematics, Machine Learning, AI, solving complex problems, learning, tackling new challenges and things well done. This site has some of the stuff I've been working on.
 
-I like Mathematics, Machine Learning and AI, solving complex problems, learning and tackling new challenges and things well done. Take a look around to see some of the projects I've been working on.
-
-[You can view my full CV here](docs/CV.pdf)
+You can take a look at my [CV](docs/CV.pdf).
 
 Feel free to reach out to me at: pol [at] pamacado [dot] com
