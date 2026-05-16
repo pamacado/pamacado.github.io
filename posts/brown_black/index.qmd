@@ -128,7 +128,7 @@ The total displacement is obtained by multiplying the step size by the net numbe
 - **Expectation:** $E[Y(t_n)] = \Delta x \sum E[X_i] = 0$. On average, the particle does not move from the origin.
 - **Variance:** Knowing that $Var(X_i) = E[X_i^2] - (E[X_i])^2 = 1 - 0 = 1$, the variance of the position is $Var(Y(t_n)) = (\Delta x)^2 \sum_{i=1}^{n} Var(X_i) = n (\Delta x)^2$. As time passes, uncertainty regarding the particle's position increases.
 
-![Simulation of a simple symmetric random walk with $S_n = \sum_{i=1}^n X_i$, where $X_i \in \{-1, 1\}$.](images/random_walk.svg){#fig-random-walk}
+![Simulation of a simple symmetric random walk with $S_n = \sum_{i=1}^n X_i$, where $X_i \in \{-1, 1\}$.](images/01rw.jpg){#fig-random-walk}
 
 ## Passing to the Limit or *Scaling Limit*
 
@@ -174,7 +174,7 @@ $$
 \frac{\partial p}{\partial t} = \frac{1}{2} \frac{\partial^2 p}{\partial x^2}
 $$
 
-![Exact simulation using Gaussian increments $\Delta W \sim \mathcal{N}(0, \Delta t)$.](images/brownian_python.svg){#fig-brownian-python}
+![Exact simulation using Gaussian increments $\Delta W \sim \mathcal{N}(0, \Delta t)$.](images/02bm.jpg){#fig-brownian-python}
 
 ## Axiomatic Definition of Brownian Motion
 
@@ -278,7 +278,7 @@ These take the following shapes:
 - For $k=0$, since $h_0=1$, its integral is a linear ramp: $s_0(t) = t$.
 - For $k \geq 1$, by integrating a step that goes up and down ($+1, -1$), we obtain a peak, tent, or triangle-shaped function, as described earlier. It starts at 0, rises linearly to a peak, and drops back to 0.
 
-*(Note: See the Haar and Schauder functions visual table in the original document.)*
+![Schauder and Haar functions](images/03hs.jpg)
 
 The construction theorem states that we can define Brownian motion $W(t)$ as an infinite series multiplying these functions by random coefficients. Let $\{A_k\}_{k=0}^\infty$ be a sequence of independent random variables with a standard normal distribution $N(0,1)$. We then have:
 
@@ -376,7 +376,7 @@ $$ {#eq-ito_box}
 
 This precisely breaks the rules of traditional calculus, where $(dx)^2 = 0$. In the stochastic world, second-order terms like $(dW)^2$ are not negligible; they accumulate and evaluate to time $dt$, inherently affecting derivatives and integrals.
 
-![Trajectory of a two-dimensional Brownian motion $B_t = (X_t, Y_t)$, where $X_t$ and $Y_t$ are independent standard one-dimensional Brownian motions. The green dot marks the origin $(0,0)$.](images/brownian2d.svg){#fig-brownian2d}
+![Trajectory of a two-dimensional Brownian motion $B_t = (X_t, Y_t)$, where $X_t$ and $Y_t$ are independent standard one-dimensional Brownian motions. The green dot marks the origin $(0,0)$.](images/04bm2.jpg){#fig-brownian2d}
 
 ## The Wiener Integral
 
@@ -489,7 +489,7 @@ For this process to belong to our class $L^2_{ad}$, the random variable $\phi_i$
 
 Visualizing this graphically allows us to see the non-anticipative nature of the integral. The elementary process takes its value at the beginning of each subinterval and remains constant, completely ignoring the fluctuations of the Brownian motion until the next evaluation point.
 
-![Approximation of a Brownian motion by an elementary process $\phi(t)$. The red dots ($t_i, W(t_i)$) indicate that the step value is determined solely using the information available at the left endpoint of the interval, without looking into the future.](images/proceso_elemental.svg){#fig-proceso_elemental}
+![Approximation of a Brownian motion by an elementary process $\phi(t)$. The red dots ($t_i, W(t_i)$) indicate that the step value is determined solely using the information available at the left endpoint of the interval, without looking into the future.](images/05ep.jpg){#fig-proceso_elemental}
 
 ### Definition of the Discrete Integral
 
@@ -859,7 +859,7 @@ Here, the $-\frac{1}{2}T$ term has appeared. In classical calculus, the answer w
 
 The emergence of this Itô correction carries a profound visual and probabilistic meaning. If we look at the equation in its differential form $W_t^2 = 2 \int_0^t W_s dW_s + t$, we know that $W_t^2$ must strictly be positive. But on the other hand, we also know that the Itô integral $2 \int_0^t W_s dW_s$ is a zero-mean martingale, meaning it can take both positive and negative values. It is precisely the addition of the quadratic variation—in our case, the line $y = t$—that somehow lifts the martingale, preventing the process from dipping into negative values.
 
-![Comparison between the Itô integral (a martingale that oscillates around zero), the Itô time correction, and the final non-negative quadratic process $W_t^2$.](images/correccion_ito.svg){#fig-correccion-ito}
+![Comparison between the Itô integral (a martingale that oscillates around zero), the Itô time correction, and the final non-negative quadratic process $W_t^2$.](images/06ma.jpg){#fig-correccion-ito}
 
 ### Differentiating with Time Dependence
 
@@ -1291,7 +1291,7 @@ This is the standard model for stock prices in Black-Scholes because, firstly, t
 
 Secondly, this model assumes that investors do not think in absolute variations like dollars or euros, but in relative percentage returns. In other words, if a stock is worth €10, a normal fluctuation might be €1, but if it is worth €100, the fluctuation should be €10, which represents 10% in both cases. By having both volatility and drift multiplied by $X_t$, GBM models a reality where continuous logarithmic returns are independent of the current price level, which almost perfectly mimics the actual behavior of markets.
 
-![Three possible trajectories of the solution to a homogeneous linear SDE. Unlike standard Brownian motion, being presented as an exponential function, the process never takes negative values.](images/mbg.svg){#fig-mbg}
+![Three possible trajectories of the solution to a homogeneous linear SDE. Unlike standard Brownian motion, being presented as an exponential function, the process never takes negative values.](images/07gbm.jpg){#fig-mbg}
 
 ## The Ornstein-Uhlenbeck Process
 
@@ -1388,7 +1388,7 @@ $$
 
 Unlike Brownian motion, whose variance grows to infinity, the Ornstein-Uhlenbeck process reaches a steady state. The variance stabilizes between the constant noise $\sigma^2$ trying to disperse the process, and the attractive force $\theta$ pulling it back to $\mu$.
 
-![Simulation of an Ornstein-Uhlenbeck process starting from $X_0 = 0$. The drift rapidly attracts the process towards the equilibrium level $\mu = 5$, with its variance stabilizing around it.](images/ou.svg){#fig-ou}
+![Simulation of an Ornstein-Uhlenbeck process starting from $X_0 = 0$. The drift rapidly attracts the process towards the equilibrium level $\mu = 5$, with its variance stabilizing around it.](images/08ou.jpg){#fig-ou}
 
 In the practice of financial markets, this process is crucial. It was adopted by Oldřich Vašíček in 1977 to model the evolution of interest rates. Unlike a stock price, which in theory can grow without limit, central bank interest rates can neither rise to infinity nor collapse uncontrollably, as monetary policy always pushes them toward a macroeconomic equilibrium level ($\mu$). The speed of reversion ($\theta$) represents the central bank's aggressiveness in correcting deviations, while volatility ($\sigma$) models short-term economic shocks. Because the variance is bounded and converges to a constant value, this model prevents absurd long-term predictions.
 
@@ -1481,7 +1481,7 @@ $$
 
 If we look closely, at $t = 0$, the variance is $0$, and as $t$ advances, the variance grows, reaching its maximum uncertainty exactly halfway at $t = T/2$. But as we approach the end, when $t \to T$, the $(T-t)$ term in the numerator causes the variance to drop back down to $0$. The process has no choice but to terminate exactly at the destination point.
 
-![Simulation of 5 trajectories of a Brownian Bridge in the interval $t \in [0,1]$. Its variance peaks at $t=0.5$ and drastically decreases until reaching absolute certainty (variance $0$) at the final instant $T=1$.](images/puente.svg){#fig-puente}
+![Simulation of 5 trajectories of a Brownian Bridge in the interval $t \in [0,1]$. Its variance peaks at $t=0.5$ and drastically decreases until reaching absolute certainty (variance $0$) at the final instant $T=1$.](images/09bb.jpg){#fig-puente}
 
 # Black-Scholes
 
@@ -1509,7 +1509,7 @@ $$
 C(T, S_T) = \max(S_T - K, 0) = (S_T - K)^+
 $$
 
-![Payoff function of a European call option with a strike price $K=100$. If the stock ends up below $K$, the contract expires worthless. If it ends up above, the value grows linearly, and the buyer pockets the difference.](images/payoff.svg){#fig-payoff}
+![Payoff function of a European call option with a strike price $K=100$. If the stock ends up below $K$, the contract expires worthless. If it ends up above, the value grows linearly, and the buyer pockets the difference.](images/10itm.jpg){#fig-payoff}
 
 If we wanted to price this contract at time $t=0$, classical statistical intuition would lead us to calculate the expected value of the final payoff. Furthermore, since a dollar today is worth more than a dollar tomorrow because money in the bank generates interest $r$, we should bring that expected value to the present using a continuous discount factor $e^{-rT}$. 
 
@@ -1566,6 +1566,9 @@ S_t = S_0 \exp\left( \left( \mu - \frac{1}{2}\sigma^2 \right)t + \sigma W_t \rig
 $$
 
 This market space or model exhibits two highly important economic properties. On the one hand, being an exponential function, it guarantees that the stock price will never be negative ($S_t > 0$). On the other hand, it implies that the logarithmic returns of the asset $\ln(S_t/S_0)$ follow a normal distribution, thus linking back to the Gaussian nature of Brownian motion.
+
+![Stocks vs Bond](images/11tb.jpg)
+
 
 ## Hedging and Arbitrage
 

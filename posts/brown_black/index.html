@@ -449,7 +449,7 @@ Y(t_n) = \Delta x \cdot S_n = \Delta x \sum_{i=1}^{n} X_i
 <div id="fig-random-walk" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-random-walk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/random_walk.svg" class="img-fluid figure-img">
+<img src="images/01rw.jpg" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-random-walk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;5: Simulation of a simple symmetric random walk with <span class="math inline">\(S_n = \sum_{i=1}^n X_i\)</span>, where <span class="math inline">\(X_i \in \{-1, 1\}\)</span>.
@@ -489,7 +489,7 @@ W(t) \sim \sqrt{t} \cdot N(0,1) \sim N(0, t)
 <div id="fig-brownian-python" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-brownian-python-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/brownian_python.svg" class="img-fluid figure-img">
+<img src="images/02bm.jpg" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-brownian-python-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;6: Exact simulation using Gaussian increments <span class="math inline">\(\Delta W \sim \mathcal{N}(0, \Delta t)\)</span>.
@@ -576,7 +576,12 @@ s_k(t) = \int_0^t h_k(u) du
 <li>For <span class="math inline">\(k=0\)</span>, since <span class="math inline">\(h_0=1\)</span>, its integral is a linear ramp: <span class="math inline">\(s_0(t) = t\)</span>.</li>
 <li>For <span class="math inline">\(k \geq 1\)</span>, by integrating a step that goes up and down (<span class="math inline">\(+1, -1\)</span>), we obtain a peak, tent, or triangle-shaped function, as described earlier. It starts at 0, rises linearly to a peak, and drops back to 0.</li>
 </ul>
-<p><em>(Note: See the Haar and Schauder functions visual table in the original document.)</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/03hs.jpg" class="img-fluid figure-img"></p>
+<figcaption>Schauder and Haar functions</figcaption>
+</figure>
+</div>
 <p>The construction theorem states that we can define Brownian motion <span class="math inline">\(W(t)\)</span> as an infinite series multiplying these functions by random coefficients. Let <span class="math inline">\(\{A_k\}_{k=0}^\infty\)</span> be a sequence of independent random variables with a standard normal distribution <span class="math inline">\(N(0,1)\)</span>. We then have:</p>
 <p><span id="eq-levy_ciesielski"><span class="math display">\[
 W(t) = \sum_{k=0}^{\infty} A_k s_k(t) \quad \text{for } 0 \leq t \leq 1
@@ -646,7 +651,7 @@ P(W(t) \in A \mid \mathcal{F}_s) = P(W(t) \in A \mid W(s))
 <div id="fig-brownian2d" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-brownian2d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/brownian2d.svg" class="img-fluid figure-img">
+<img src="images/04bm2.jpg" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-brownian2d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;7: Trajectory of a two-dimensional Brownian motion <span class="math inline">\(B_t = (X_t, Y_t)\)</span>, where <span class="math inline">\(X_t\)</span> and <span class="math inline">\(Y_t\)</span> are independent standard one-dimensional Brownian motions. The green dot marks the origin <span class="math inline">\((0,0)\)</span>.
@@ -730,7 +735,7 @@ Var\left( \sum c_i \Delta W_i \right) &amp;= \sum c_i^2 Var(\Delta W_i) \quad \t
 <div id="fig-proceso_elemental" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-proceso_elemental-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/proceso_elemental.svg" class="img-fluid figure-img">
+<img src="images/05ep.jpg" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-proceso_elemental-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;8: Approximation of a Brownian motion by an elementary process <span class="math inline">\(\phi(t)\)</span>. The red dots (<span class="math inline">\(t_i, W(t_i)\)</span>) indicate that the step value is determined solely using the information available at the left endpoint of the interval, without looking into the future.
@@ -1025,7 +1030,7 @@ W_T^2 - W_0^2 &amp;= T + 2 \int_0^T W_t dW_t
 <div id="fig-correccion-ito" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-correccion-ito-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/correccion_ito.svg" class="img-fluid figure-img">
+<img src="images/06ma.jpg" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-correccion-ito-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;9: Comparison between the Itô integral (a martingale that oscillates around zero), the Itô time correction, and the final non-negative quadratic process <span class="math inline">\(W_t^2\)</span>.
@@ -1343,7 +1348,7 @@ dY_t &amp;= a(t) Y_t dt + b(t) Y_t dW_t
 <div id="fig-mbg" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-mbg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/mbg.svg" class="img-fluid figure-img">
+<img src="images/07gbm.jpg" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mbg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;10: Three possible trajectories of the solution to a homogeneous linear SDE. Unlike standard Brownian motion, being presented as an exponential function, the process never takes negative values.
@@ -1418,7 +1423,7 @@ E[X_t] = X_0 e^{-\theta t} + \mu (1 - e^{-\theta t})
 <div id="fig-ou" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ou-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/ou.svg" class="img-fluid figure-img">
+<img src="images/08ou.jpg" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ou-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;11: Simulation of an Ornstein-Uhlenbeck process starting from <span class="math inline">\(X_0 = 0\)</span>. The drift rapidly attracts the process towards the equilibrium level <span class="math inline">\(\mu = 5\)</span>, with its variance stabilizing around it.
@@ -1492,7 +1497,7 @@ E[X_t] = (T - t) \cdot E\left[ \int_0^t \frac{1}{T - s} dW_s \right] = 0
 <div id="fig-puente" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-puente-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/puente.svg" class="img-fluid figure-img">
+<img src="images/09bb.jpg" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-puente-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;12: Simulation of 5 trajectories of a Brownian Bridge in the interval <span class="math inline">\(t \in [0,1]\)</span>. Its variance peaks at <span class="math inline">\(t=0.5\)</span> and drastically decreases until reaching absolute certainty (variance <span class="math inline">\(0\)</span>) at the final instant <span class="math inline">\(T=1\)</span>.
@@ -1521,7 +1526,7 @@ C(T, S_T) = \max(S_T - K, 0) = (S_T - K)^+
 <div id="fig-payoff" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-payoff-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/payoff.svg" class="img-fluid figure-img">
+<img src="images/10itm.jpg" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-payoff-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;13: Payoff function of a European call option with a strike price <span class="math inline">\(K=100\)</span>. If the stock ends up below <span class="math inline">\(K\)</span>, the contract expires worthless. If it ends up above, the value grows linearly, and the buyer pockets the difference.
@@ -1566,6 +1571,12 @@ dS_t = \mu S_t dt + \sigma S_t dW_t
 S_t = S_0 \exp\left( \left( \mu - \frac{1}{2}\sigma^2 \right)t + \sigma W_t \right)
 \]</span></p>
 <p>This market space or model exhibits two highly important economic properties. On the one hand, being an exponential function, it guarantees that the stock price will never be negative (<span class="math inline">\(S_t &gt; 0\)</span>). On the other hand, it implies that the logarithmic returns of the asset <span class="math inline">\(\ln(S_t/S_0)\)</span> follow a normal distribution, thus linking back to the Gaussian nature of Brownian motion.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/11tb.jpg" class="img-fluid figure-img"></p>
+<figcaption>Stocks vs Bond</figcaption>
+</figure>
+</div>
 </section>
 </section>
 <section id="hedging-and-arbitrage" class="level2">
